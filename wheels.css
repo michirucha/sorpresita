@@ -1,0 +1,108 @@
+/* Diseño general */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(to bottom, #e6f0ff, #873333);
+    color: #333;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    background-image: url('hot-wheels.webp');
+
+}
+
+h1 {
+    font-size: 2.5em;
+    margin: 20px 0;
+    color: #ffffff;
+}
+
+/* Pista de carrera */
+.pista {
+    position: relative;
+    width: 626px; /* Ancho actualizado */
+    height: 290px; /* Alto actualizado */
+    margin: 50px auto;
+    background: url('pppp.avif') no-repeat center center;
+    background-size: cover;
+    border: 8px solid #333;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+}
+
+
+.carro {
+    position: absolute;
+    width: 120px;
+    height: 60px;
+    background-size: cover;
+    background-position: center;
+    line-height: 60px;
+    text-align: center;
+    font-weight: bold;
+    color: white;
+    border-radius: 10px;
+    font-size: 1.2em;
+    top: 10px;
+    left: 0;
+    transition: left 0.1s;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+}
+
+/* Imagen del carro 1 (amarillo) */
+#carro1 {
+    background-image: url('ppp.png');
+}
+
+/* Imagen del carro 2 (morado) */
+#carro2 {
+    background-image: url('pp.jpg');
+    top: 170px;
+}
+
+/* Botón */
+.btn {
+    background-color: #bc4646;
+    color: rgb(227, 234, 149);
+    border: none;
+    padding: 15px 30px;
+    font-size: 1.5em;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 30px;
+}
+
+.btn:hover {
+    background-color: #fff75e;
+}
+
+/* Mensaje de victoria */
+.mensaje-victoria {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.85);
+    color: white;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    font-size: 3em;
+    z-index: 10;
+}
+
+.mensaje-victoria h2 {
+    font-size: 5em;
+    animation: parpadeo 1s infinite alternate;
+}
+
+/* Efecto de parpadeo en el mensaje */
+@keyframes parpadeo {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0.5;
+    }
+}
